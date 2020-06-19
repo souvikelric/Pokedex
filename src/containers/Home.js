@@ -6,8 +6,8 @@ import DetailPage from "./DetailPage";
 class Home extends Component {
   render() {
     return (
-      <BrowserRouter basename="/containers">
-        <Route exact path="/" component={App} />
+      <BrowserRouter>
+        <Route exact path="/pokedex" component={App} />
         <Route exact path="/DetailPage" component={DetailPage} />
       </BrowserRouter>
     );
