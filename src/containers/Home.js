@@ -6,7 +6,7 @@ import DetailPage from "./DetailPage";
 class Home extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route exact path="/" component={App} />
         <Route exact path="/DetailPage" component={DetailPage} />
       </BrowserRouter>
